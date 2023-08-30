@@ -6,6 +6,7 @@ Here's our first attempt at using data to create a table:
 import streamlit as st
 import pandas as pd
 
+"""
 # Everything is accessible via the st.secrets dict:
 st.write("DB username:", st.secrets["db_username"])
 st.write("DB password:", st.secrets["db_password"])
@@ -16,6 +17,7 @@ st.write(
     "Has environment variables been set:",
     os.environ["db_username"] == st.secrets["db_username"],
 )
+"""
 
 st.write("Here's our first attempt at using data to create a table:")
 st.write(pd.DataFrame({
